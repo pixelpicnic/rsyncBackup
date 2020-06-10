@@ -98,6 +98,8 @@ Please contact me with any pull requests!
 
 ## Authors
 [Pixelpicnic](https://github.com/pixelpicnic)
+With feedback from:
+[antipyretiquel](https://github.com/antipyretiquel)
 
 ## License
 
