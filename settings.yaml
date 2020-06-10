@@ -1,0 +1,19 @@
+# SETTINGS FOR IMPORT
+
+test : 1 # Run a test - no files will be copied or deleted.
+shutdown : 1 # Shut down the NAS upon completion.
+shutdown_command : 'poweroff' # Default command for Synology Units.
+
+# SSH SETTINGS
+server_user : 'admin' # User to use with rsync connection.
+server : '192.168.1.X' # IP address of the SOURCE.
+port : '22' # SSH port for rsync connection.
+
+# SYNC SETTINGS
+sources : 'sources.conf' # Sources to be included in the copy.
+exclusions : 'exclusions.conf' # Exclusion mask for rsync process.
+source_root : '/volume1/' # Sources will be read relative to the root.
+target_root : '/volume1/' # Maintain the file structure of the source.
+
+# LOG SETTINGS
+log_dir : 'logs' # Directory for storing the log files.
