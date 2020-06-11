@@ -4,12 +4,17 @@ rsycBackup is a script for helping create a redundant copy of your data from one
 
 This differs from current solutions, as this process is run completely from the DESTINATION unit, allowing the user to automate power-on, backup process, and shutdown of the NAS unit.
 
-## Getting Started
+## Features
+* Secure offline storage
+* Backup run from the DESTINATION device, allowing granular control with timing and permissions
+* Protection from ransomware and other attacks
+
+# Getting Started
 
 There are a few prerequisites and safety precautions to consider before running the script.
 By default, the script is set to TEST, which will help you with the setup and testing before implementation.
 
-### Prerequisites
+## Prerequisites
 
 Some things you should have in place before you get started:
 * basic working knowledge of linux
@@ -26,7 +31,7 @@ You will need SSH enabled on both NAS units, with [key-based authentication](htt
 * If you're having issues with key-based authentication, Copy the sshd_config into the homes/[USER]/.ssh directory
 
 
-### Installing
+# Installation
 
 Once key-based ssh is working, script installation is simple.
 There are 4 files included:
@@ -84,6 +89,7 @@ synonet --wake [MAC ADDRESS] eth0;
 3) The DESTINATION system settings.yaml is set to shutdown after completion
 4) Logs are compressed and archived for reference
 
+# Sources
 ## Built With
 
 * [python](https://www.python.org) - if you don't know, now you know.
@@ -98,6 +104,7 @@ Please contact me with any pull requests!
 
 ## Authors
 [Pixelpicnic](https://github.com/pixelpicnic)
+
 With feedback from:
 [antipyretiquel](https://github.com/antipyretiquel)
 
